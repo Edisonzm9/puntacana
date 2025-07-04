@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locura en Punta Cana | Plan de Viaje</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('https://placehold.co/1200x800/00BFFF/FFFFFF?text=Punta+Cana');
+            background-size: cover;
+            background-position: center;
+        }
+        .card-option {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .card-option:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        .card-selected {
+            transform: translateY(-5px);
+            box-shadow: 0 0 0 4px #10B981, 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            border-color: #10B981;
+        }
+        .comparison-button {
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- HERO SECTION -->
+    <header class="hero-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 sm:px-6 py-16 text-center">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-widest">Locura en Punta Cana</h1>
+            <p class="mt-4 text-lg sm:text-xl md:text-2xl font-bold text-cyan-300">MISIÓN: 12 OCT - 18 OCT, 2025</p>
+            <p class="mt-2 text-base sm:text-lg">Plan de Viaje Grupal</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8 -mt-10">
+
+        <!-- ITINERARY SECTION -->
+        <section id="itinerario" class="mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">Itinerario Detallado</h2>
+            <div class="space-y-8">
+                <!-- Days 1-2: Local Adventure -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+                    <div class="bg-cyan-500 text-white p-4 flex items-center justify-center md:w-24">
+                        <div class="text-center">
+                            <p class="font-bold text-xl">DÍAS</p>
+                            <p class="font-black text-4xl sm:text-5xl">1-2</p>
+                            <p class="text-sm">AVENTURA LOCAL</p>
+                        </div>
+                    </div>
+                    <div class="p-4 sm:p-6 flex-grow">
+                        <h3 class="font-bold text-xl text-cyan-700">Domingo 12 y Lunes 13 de Octubre</h3>
+                        <p class="text-sm text-gray-500 mb-4">Llegada, exploración y la gran decisión.</p>
+                        <ul class="space-y-3 list-disc list-inside text-sm sm:text-base">
+                            <li><strong class="font-semibold">Dom 12, 12:05 AM:</strong> Despegue desde Quito (UIO) en el vuelo DM6705.</li>
+                            <li><strong class="font-semibold">Dom 12, 04:46 AM:</strong> Aterrizaje en PUJ. Misión: pasar migración, recoger maletas y tomar un Uber al alojamiento temporal (Airbnb/Hotel).</li>
+                            <li><strong class="font-semibold">Dom 12, Día:</strong> Check-in, siesta de recuperación. Por la tarde, visita a Playa Macao para sentir la arena y el mar.</li>
+                            <li><strong class="font-semibold">Dom 12, Noche:</strong> Cena en un "comedor" local para probar el verdadero sazón dominicano.</li>
+                            <li><strong class="font-semibold">Lun 13, Todo el día:</strong> ¡Día de la gran aventura! Aquí es donde elegimos nuestro destino en la sección de abajo.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Day 3: Transition to RIU -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+                    <div class="bg-teal-500 text-white p-4 flex items-center justify-center md:w-24">
+                        <div class="text-center">
+                            <p class="font-bold text-xl">DÍA</p>
+                            <p class="font-black text-4xl sm:text-5xl">3</p>
+                            <p class="text-sm">TRANSICIÓN</p>
+                        </div>
+                    </div>
+                    <div class="p-4 sm:p-6 flex-grow">
+                        <h3 class="font-bold text-xl text-teal-700">Martes 14 de Octubre</h3>
+                        <p class="text-sm text-gray-500 mb-4">De exploradores a reyes del todo incluido.</p>
+                        <ul class="space-y-3 list-disc list-inside text-sm sm:text-base">
+                            <li><strong class="font-semibold">Mañana:</strong> Desayuno local y última vuelta por la zona. Check-out del alojamiento temporal.</li>
+                            <li><strong class="font-semibold">Mediodía:</strong> Uber hacia el Hotel Riu Republica. Distancia aprox: 20-30 min.</li>
+                            <li><strong class="font-semibold">Tarde/Noche:</strong> Check-in, pulsera y que comience oficialmente la vida del todo incluido. Primera cena y fiesta en el resort.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Days 4-6: All-Inclusive Life -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+                    <div class="bg-emerald-500 text-white p-4 flex items-center justify-center md:w-24">
+                        <div class="text-center">
+                            <p class="font-bold text-xl">DÍAS</p>
+                            <p class="font-black text-4xl sm:text-5xl">4-6</p>
+                            <p class="text-sm">VIDA DE REYES</p>
+                        </div>
+                    </div>
+                    <div class="p-4 sm:p-6 flex-grow">
+                        <h3 class="font-bold text-xl text-emerald-700">Miércoles 15 a Viernes 17 de Octubre</h3>
+                        <p class="text-sm text-gray-500 mb-4">Misión principal: disfrutar al máximo el Riu.</p>
+                        <ul class="space-y-3 list-disc list-inside text-sm sm:text-base">
+                            <li><strong class="font-semibold">Objetivos Diarios:</strong> Dominar el buffet, probar todos los cócteles, participar en las actividades de la piscina, playa, y deportes acuáticos.</li>
+                            <li><strong class="font-semibold">Miércoles:</strong> 🕺 Riu Pool Party - ¡Temática White Party por la tarde!</li>
+                            <li><strong class="font-semibold">Jueves:</strong> Día de relax o de participar en los torneos deportivos del hotel.</li>
+                            <li><strong class="font-semibold">Viernes:</strong> 🎧 Riu Pool Party - ¡Temática Neon Party por la tarde/noche!</li>
+                            <li><strong class="font-semibold">Noches:</strong> Explorar los restaurantes temáticos, disfrutar de los shows y las fiestas del hotel.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Day 7: The End -->
+                 <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+                    <div class="bg-red-500 text-white p-4 flex items-center justify-center md:w-24">
+                        <div class="text-center">
+                            <p class="font-bold text-xl">DÍA</p>
+                            <p class="font-black text-4xl sm:text-5xl">7</p>
+                            <p class="text-sm">FIN DE MISIÓN</p>
+                        </div>
+                    </div>
+                    <div class="p-4 sm:p-6 flex-grow">
+                        <h3 class="font-bold text-xl text-red-700">Sábado 18 de Octubre</h3>
+                        <p class="text-sm text-gray-500 mb-4">El regreso a casa.</p>
+                        <ul class="space-y-3 list-disc list-inside text-sm sm:text-base">
+                            <li><strong class="font-semibold">Mañana:</strong> Último desayuno de campeones y chapuzón en la piscina.</li>
+                            <li><strong class="font-semibold">12:00 PM:</strong> Check-out del hotel. Podemos dejar las maletas y seguir usando las instalaciones.</li>
+                            <li><strong class="font-semibold">03:30 PM:</strong> Uber hacia el aeropuerto (PUJ). Distancia: 25-30 min.</li>
+                            <li><strong class="font-semibold">06:50 PM:</strong> Vuelo DM6704 de regreso a Quito. ¡Misión cumplida!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERACTIVE ADVENTURE CHOICE -->
+        <section id="aventura" class="mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-2">La Zona de Decisión: Aventura del Lunes 13</h2>
+            <p class="text-center text-gray-600 mb-8">Elijan una actividad. La opción que escojamos afectará el presupuesto total.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <!-- Option A: Scape Park -->
+                <div id="optionA" class="card-option bg-white rounded-xl shadow-lg border-4 border-transparent p-4 sm:p-6 text-center flex flex-col">
+                    <h3 class="text-xl sm:text-2xl font-bold text-cyan-600">OPCIÓN A: AVENTURA TOP</h3>
+                    <p class="font-semibold text-base sm:text-lg mb-4">Scape Park: Hoyo Azul y Ziplines</p>
+                    <img src="https://placehold.co/600x400/3498DB/FFFFFF?text=Hoyo+Azul" alt="Imagen del Hoyo Azul" class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <div class="text-gray-600 mb-4 flex-grow text-left text-xs sm:text-sm space-y-1">
+                        <p><strong>08:00 AM:</strong> Recogida en el alojamiento.</p>
+                        <p><strong>09:00 AM:</strong> Llegada a Scape Park, adrenalina con Ziplines.</p>
+                        <p><strong>12:30 PM:</strong> Baño relajante en el increíble Hoyo Azul.</p>
+                        <p><strong>02:00 PM:</strong> Almuerzo dentro del parque (incluido).</p>
+                        <p><strong>03:30 PM:</strong> Regreso, llegando cansados pero felices.</p>
+                    </div>
+                    <p class="text-xl sm:text-2xl font-black text-gray-800 mb-4">Costo Aprox: $180 / persona</p>
+                    <button onclick="selectOption('A')" class="w-full mt-auto bg-cyan-500 text-white font-bold py-2 sm:py-3 rounded-lg hover:bg-cyan-600 transition-colors">Seleccionar</button>
+                </div>
+
+                <!-- Option B: Isla Saona -->
+                <div id="optionB" class="card-option bg-white rounded-xl shadow-lg border-4 border-transparent p-4 sm:p-6 text-center flex flex-col">
+                    <h3 class="text-xl sm:text-2xl font-bold text-emerald-600">OPCIÓN B: PARAÍSO CARIBEÑO</h3>
+                    <p class="font-semibold text-base sm:text-lg mb-4">Excursión a Isla Saona</p>
+                    <img src="https://placehold.co/600x400/2ECC71/FFFFFF?text=Isla+Saona" alt="Imagen de Isla Saona" class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <div class="text-gray-600 mb-4 flex-grow text-left text-xs sm:text-sm space-y-1">
+                        <p><strong>07:30 AM:</strong> Recogida y viaje en bus a Bayahibe.</p>
+                        <p><strong>10:00 AM:</strong> Abordar catamarán o lancha rápida. ¡Empieza la fiesta!</p>
+                        <p><strong>12:30 PM:</strong> Llegada a Isla Saona. Tiempo libre y almuerzo buffet.</p>
+                        <p><strong>03:00 PM:</strong> Parada en la Piscina Natural para fotos épicas.</p>
+                        <p><strong>05:00 PM:</strong> Regreso al alojamiento.</p>
+                    </div>
+                    <p class="text-xl sm:text-2xl font-black text-gray-800 mb-4">Costo Aprox: $125 / persona</p>
+                    <button onclick="selectOption('B')" class="w-full mt-auto bg-emerald-500 text-white font-bold py-2 sm:py-3 rounded-lg hover:bg-emerald-600 transition-colors">Seleccionar</button>
+                </div>
+                 <!-- Option C: Buggy Adventure -->
+                <div id="optionC" class="card-option bg-white rounded-xl shadow-lg border-4 border-transparent p-4 sm:p-6 text-center flex flex-col">
+                    <h3 class="text-xl sm:text-2xl font-bold text-orange-600">OPCIÓN C: LODO Y VELOCIDAD</h3>
+                    <p class="font-semibold text-base sm:text-lg mb-4">Aventura en Buggies</p>
+                    <img src="https://placehold.co/600x400/E67E22/FFFFFF?text=Buggies" alt="Imagen de Buggies" class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <div class="text-gray-600 mb-4 flex-grow text-left text-xs sm:text-sm space-y-1">
+                        <p><strong>08:30 AM:</strong> Recogida para la aventura de la mañana.</p>
+                        <p><strong>09:00 AM:</strong> Briefing de seguridad y ¡a acelerar!</p>
+                        <p><strong>09:30 AM:</strong> Ruta por caminos de tierra, parada en plantación de café/cacao.</p>
+                        <p><strong>11:00 AM:</strong> Chapuzón en una cueva con cenote.</p>
+                        <p><strong>12:30 PM:</strong> Regreso a la base, llenos de lodo.</p>
+                    </div>
+                    <p class="text-xl sm:text-2xl font-black text-gray-800 mb-4">Costo Aprox: $95 / persona</p>
+                    <button onclick="selectOption('C')" class="w-full mt-auto bg-orange-500 text-white font-bold py-2 sm:py-3 rounded-lg hover:bg-orange-600 transition-colors">Seleccionar</button>
+                </div>
+                <!-- Option D: Macao Beach Chill -->
+                <div id="optionD" class="card-option bg-white rounded-xl shadow-lg border-4 border-transparent p-4 sm:p-6 text-center flex flex-col">
+                    <h3 class="text-xl sm:text-2xl font-bold text-blue-600">OPCIÓN D: A LO LOCAL</h3>
+                    <p class="font-semibold text-base sm:text-lg mb-4">Día de Playa en Macao</p>
+                    <img src="https://placehold.co/600x400/3498DB/FFFFFF?text=Playa+Macao" alt="Imagen de Playa Macao" class="rounded-lg mb-4 w-full h-48 object-cover">
+                     <div class="text-gray-600 mb-4 flex-grow text-left text-xs sm:text-sm space-y-1">
+                        <p><strong>10:00 AM:</strong> Uber hacia Playa Macao sin apuros.</p>
+                        <p><strong>10:30 AM:</strong> Instalarse, alquilar sillas y sombrilla.</p>
+                        <p><strong>01:30 PM:</strong> Almuerzo de pescado frito fresco en un comedor local.</p>
+                        <p><strong>Todo el día:</strong> Disfrutar del sol, el mar y las olas a nuestro ritmo.</p>
+                        <p><strong>04:00 PM:</strong> Uber de regreso cuando nos cansemos.</p>
+                    </div>
+                    <p class="text-xl sm:text-2xl font-black text-gray-800 mb-4">Costo Aprox: $30 / persona</p>
+                    <button onclick="selectOption('D')" class="w-full mt-auto bg-blue-500 text-white font-bold py-2 sm:py-3 rounded-lg hover:bg-blue-600 transition-colors">Seleccionar</button>
+                </div>
+                 <!-- Option E: Coco Bongo -->
+                <div id="optionE" class="card-option bg-white rounded-xl shadow-lg border-4 border-transparent p-4 sm:p-6 text-center flex flex-col sm:col-span-2 lg:col-span-1">
+                    <h3 class="text-xl sm:text-2xl font-bold text-purple-600">OPCIÓN E: FIESTA SHOW</h3>
+                    <p class="font-semibold text-base sm:text-lg mb-4">Noche en Coco Bongo</p>
+                    <img src="https://placehold.co/600x400/9B59B6/FFFFFF?text=Coco+Bongo" alt="Imagen de Coco Bongo" class="rounded-lg mb-4 w-full h-48 object-cover">
+                     <div class="text-gray-600 mb-4 flex-grow text-left text-xs sm:text-sm space-y-1">
+                        <p><strong>Día:</strong> Relax en el alojamiento o playa cercana.</p>
+                        <p><strong>09:30 PM:</strong> Traslado hacia Coco Bongo.</p>
+                        <p><strong>10:30 PM:</strong> Ingreso y que comience el show y la barra libre.</p>
+                        <p><strong>03:00 AM:</strong> Fin del show, regreso al alojamiento.</p>
+                        <p><strong>Nota:</strong> El martes será día de recuperación.</p>
+                    </div>
+                    <p class="text-xl sm:text-2xl font-black text-gray-800 mb-4">Costo Aprox: $90 / persona</p>
+                    <button onclick="selectOption('E')" class="w-full mt-auto bg-purple-500 text-white font-bold py-2 sm:py-3 rounded-lg hover:bg-purple-600 transition-colors">Seleccionar</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- BUDGET SECTION -->
+        <section id="presupuesto" class="bg-gray-800 text-white rounded-xl shadow-2xl p-4 sm:p-6 md:p-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">Presupuesto Detallado</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gray-700 rounded-lg p-4 mb-6">
+                    <h3 class="font-bold text-lg text-center">Desglose de Costos por Persona</h3>
+                    <div class="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+                        <div>
+                            <p class="text-sm text-gray-400">Vuelos (UIO-PUJ)</p>
+                            <p class="text-lg sm:text-xl font-bold" id="flights-cost">$310.53</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-400">Hotel Riu (4 Noches)</p>
+                            <p class="text-lg sm:text-xl font-bold" id="riu-cost">$387.00</p>
+                        </div>
+                        <div id="local-hotel-container">
+                            <p class="text-sm text-gray-400">Alojamiento Local (2 Noches)</p>
+                            <p class="text-lg sm:text-xl font-bold" id="local-hotel-cost">$35.00</p>
+                        </div>
+                        <div id="local-misc-container">
+                            <p class="text-sm text-gray-400">Comida/Transporte Local</p>
+                            <p class="text-lg sm:text-xl font-bold" id="local-misc-cost">$45.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-600 rounded-lg p-4 mb-6 text-center">
+                    <h3 class="font-bold text-lg mb-2">Comparativa de Estancia</h3>
+                    <p class="text-sm mb-3">¿Y si nos quedamos las 6 noches en el Riu? El costo por noche en el Riu es de <strong id="riu-nightly-cost">$96.75</strong>.</p>
+                    <button id="comparison-toggle" class="comparison-button bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-2 px-4 rounded-lg">Calcular 6 Noches en Riu</button>
+                </div>
+
+                <div class="bg-gray-900 rounded-lg p-4 sm:p-6">
+                    <h3 class="font-bold text-xl text-center text-cyan-300 mb-4">Cálculo Total Interactivo (por persona)</h3>
+                    <div class="space-y-4 text-sm sm:text-base">
+                        <div class="flex justify-between items-center">
+                            <p>Subtotal Fijo (Vuelos + Riu):</p>
+                            <p class="font-bold text-lg" id="fixed-subtotal">$697.53</p>
+                        </div>
+                        <div class="flex justify-between items-center" id="extras-subtotal-container">
+                            <p>Subtotal Extras (Aloj. + Comida):</p>
+                            <p class="font-bold text-lg" id="extras-subtotal">$80.00</p>
+                        </div>
+                        <div class="flex justify-between items-center text-cyan-400" id="adventure-cost-container">
+                            <p>Costo Aventura (<span id="selected-option-name">Opción C</span>):</p>
+                            <p class="font-bold text-lg" id="adventure-cost">$95.00</p>
+                        </div>
+                        <hr class="border-gray-600">
+                        <div class="flex justify-between items-center text-lg sm:text-xl">
+                            <p class="font-bold">SUBTOTAL VIAJE:</p>
+                            <p class="font-black text-green-400" id="trip-subtotal">$872.53</p>
+                        </div>
+                        <div class="flex justify-between items-center text-red-400">
+                            <p>Impuesto ISD (5% desde Ecuador):</p>
+                            <p class="font-bold text-lg" id="isd-tax">$43.63</p>
+                        </div>
+                        <hr class="border-gray-500 my-2">
+                        <div class="flex justify-between items-center text-xl sm:text-2xl md:text-3xl bg-green-500 text-gray-900 p-3 rounded-lg">
+                            <p class="font-extrabold">GRAN TOTAL POR PERSONA:</p>
+                            <p class="font-black" id="grand-total">$916.16</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-8 px-4">
+        <p class="font-bold text-gray-700">A disfrutar del viaje.</p>
+        <p class="text-sm text-gray-500">Punta Cana 2025</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const costs = {
+                flights: 310.53,
+                riuHotel4Nights: 387.00,
+                riuNightly: 387.00 / 4,
+                localHotel: 35.00,
+                localMisc: 45.00,
+                adventureA: 180.00,
+                adventureB: 125.00,
+                adventureC: 95.00,
+                adventureD: 30.00,
+                adventureE: 90.00,
+                isdRate: 0.05
+            };
+
+            const ui = {
+                flightsCost: document.getElementById('flights-cost'),
+                riuCost: document.getElementById('riu-cost'),
+                localHotelCost: document.getElementById('local-hotel-cost'),
+                localMiscCost: document.getElementById('local-misc-cost'),
+                fixedSubtotal: document.getElementById('fixed-subtotal'),
+                extrasSubtotal: document.getElementById('extras-subtotal'),
+                selectedOptionName: document.getElementById('selected-option-name'),
+                adventureCost: document.getElementById('adventure-cost'),
+                tripSubtotal: document.getElementById('trip-subtotal'),
+                isdTax: document.getElementById('isd-tax'),
+                grandTotal: document.getElementById('grand-total'),
+                comparisonToggle: document.getElementById('comparison-toggle'),
+                riuNightlyCost: document.getElementById('riu-nightly-cost'),
+                localHotelContainer: document.getElementById('local-hotel-container'),
+                localMiscContainer: document.getElementById('local-misc-container'),
+                extrasSubtotalContainer: document.getElementById('extras-subtotal-container'),
+                adventureCostContainer: document.getElementById('adventure-cost-container'),
+                options: ['A', 'B', 'C', 'D', 'E'].map(opt => document.getElementById(`option${opt}`))
+            };
+
+            let state = {
+                isAllRiuMode: false,
+                selectedAdventure: 'C'
+            };
+
+            function formatCurrency(value) {
+                return `$${value.toFixed(2)}`;
+            }
+
+            function calculateTotal() {
+                let fixedBase = costs.flights;
+                let extrasBase = 0;
+                let adventureCost = 0;
+                let adventureName = '';
+
+                if (state.isAllRiuMode) {
+                    fixedBase += costs.riuNightly * 6;
+                    ui.riuCost.textContent = formatCurrency(costs.riuNightly * 6);
+                    ui.riuCost.previousElementSibling.textContent = 'Hotel Riu (6 Noches)';
+                    extrasBase = 0; // No local costs in this mode
+                } else {
+                    fixedBase += costs.riuHotel4Nights;
+                    ui.riuCost.textContent = formatCurrency(costs.riuHotel4Nights);
+                    ui.riuCost.previousElementSibling.textContent = 'Hotel Riu (4 Noches)';
+                    extrasBase = costs.localHotel + costs.localMisc;
+                }
+                
+                switch(state.selectedAdventure) {
+                    case 'A': adventureCost = costs.adventureA; adventureName = 'Aventura Top'; break;
+                    case 'B': adventureCost = costs.adventureB; adventureName = 'Paraíso Caribeño'; break;
+                    case 'C': adventureCost = costs.adventureC; adventureName = 'Lodo y Velocidad'; break;
+                    case 'D': adventureCost = costs.adventureD; adventureName = 'A lo Local'; break;
+                    case 'E': adventureCost = costs.adventureE; adventureName = 'Fiesta Show'; break;
+                }
+                
+                const tripSubtotal = fixedBase + extrasBase + (state.isAllRiuMode ? 0 : adventureCost);
+                const isd = tripSubtotal * costs.isdRate;
+                const grandTotal = tripSubtotal + isd;
+
+                // Update UI
+                ui.fixedSubtotal.textContent = formatCurrency(fixedBase);
+                ui.extrasSubtotal.textContent = formatCurrency(extrasBase);
+                ui.selectedOptionName.textContent = adventureName;
+                ui.adventureCost.textContent = formatCurrency(adventureCost);
+                ui.tripSubtotal.textContent = formatCurrency(tripSubtotal);
+                ui.isdTax.textContent = formatCurrency(isd);
+                ui.grandTotal.textContent = formatCurrency(grandTotal);
+
+                // Toggle visibility of local cost sections
+                const displayMode = state.isAllRiuMode ? 'none' : 'block';
+                ui.localHotelContainer.style.display = displayMode;
+                ui.localMiscContainer.style.display = displayMode;
+                ui.extrasSubtotalContainer.style.display = displayMode;
+                ui.adventureCostContainer.style.display = displayMode;
+                
+                // Update card styles
+                ui.options.forEach(card => {
+                    if (card.id === `option${state.selectedAdventure}`) {
+                        card.classList.add('card-selected');
+                    } else {
+                        card.classList.remove('card-selected');
+                    }
+                });
+            }
+            
+            window.selectOption = (option) => {
+                state.selectedAdventure = option;
+                calculateTotal();
+            };
+
+            ui.comparisonToggle.addEventListener('click', () => {
+                state.isAllRiuMode = !state.isAllRiuMode;
+                if (state.isAllRiuMode) {
+                    ui.comparisonToggle.textContent = 'Calcular Plan Híbrido (2+4)';
+                    ui.comparisonToggle.classList.remove('bg-cyan-600', 'hover:bg-cyan-700');
+                    ui.comparisonToggle.classList.add('bg-orange-600', 'hover:bg-orange-700');
+                } else {
+                    ui.comparisonToggle.textContent = 'Calcular 6 Noches en Riu';
+                    ui.comparisonToggle.classList.remove('bg-orange-600', 'hover:bg-orange-700');
+                    ui.comparisonToggle.classList.add('bg-cyan-600', 'hover:bg-cyan-700');
+                }
+                calculateTotal();
+            });
+
+            // Initial Page Load
+            ui.flightsCost.textContent = formatCurrency(costs.flights);
+            ui.riuCost.textContent = formatCurrency(costs.riuHotel4Nights);
+            ui.localHotelCost.textContent = formatCurrency(costs.localHotel);
+            ui.localMiscCost.textContent = formatCurrency(costs.localMisc);
+            ui.riuNightlyCost.textContent = formatCurrency(costs.riuNightly);
+            
+            calculateTotal();
+        });
+    </script>
+</body>
+</html>
