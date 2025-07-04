@@ -13,7 +13,7 @@
             font-family: 'Poppins', sans-serif;
         }
         .hero-bg {
-            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('https://images.pexels.com/photos/2263436/pexels-photo-2263436.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url('https://images.pexels.com/photos/2240763/pexels-photo-2240763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
             background-size: cover;
             background-position: center;
         }
@@ -26,12 +26,31 @@
             box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
         }
         .card-selected {
-            transform: translateY(-5px);
+            transform: scale(1.05);
             box-shadow: 0 0 0 4px #10B981, 0 10px 15px -3px rgb(0 0 0 / 0.1);
             border-color: #10B981;
         }
         .comparison-button {
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .comparison-button:hover {
+            transform: scale(1.05);
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .fade-in-up {
+            opacity: 0;
+        }
+        .fade-in-up.visible {
+            animation: fadeInUp 0.8s ease-out forwards;
         }
     </style>
 </head>
@@ -40,7 +59,7 @@
     <!-- HERO SECTION -->
     <header class="hero-bg text-white shadow-lg">
         <div class="container mx-auto px-4 sm:px-6 py-16 text-center">
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-widest">Locura en Punta Cana</h1>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-widest animate-pulse">Locura en Punta Cana</h1>
             <p class="mt-4 text-lg sm:text-xl md:text-2xl font-bold text-cyan-300">MISIÓN: 12 OCT - 18 OCT, 2025</p>
             <p class="mt-2 text-base sm:text-lg">Plan de Viaje Grupal</p>
         </div>
@@ -49,8 +68,8 @@
     <main class="container mx-auto p-4 md:p-8 -mt-10">
 
         <!-- ITINERARY SECTION -->
-        <section id="itinerario" class="mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">Itinerario Detallado</h2>
+        <section id="itinerario" class="mb-12 fade-in-up">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">El Plan de Batalla: Itinerario Detallado</h2>
             <div class="space-y-8">
                 <!-- Days 1-2: Local Adventure -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row">
@@ -67,8 +86,8 @@
                         <ul class="space-y-3 list-disc list-inside text-sm sm:text-base">
                             <li><strong class="font-semibold">Dom 12, 12:05 AM:</strong> Despegue desde Quito (UIO) en el vuelo DM6705.</li>
                             <li><strong class="font-semibold">Dom 12, 04:46 AM:</strong> Aterrizaje en PUJ. Misión: pasar migración, recoger maletas y tomar un Uber al alojamiento temporal (Airbnb/Hotel).</li>
-                            <li><strong class="font-semibold">Dom 12, Día:</strong> Check-in, siesta de recuperación. Por la tarde, visita a Playa Macao para sentir la arena y el mar.</li>
-                            <li><strong class="font-semibold">Dom 12, Noche:</strong> Cena en un "comedor" local para probar el verdadero sazón dominicano.</li>
+                            <li><strong class="font-semibold">Dom 12, Día:</strong> Check-in, siesta de recuperación. Por la tarde, asalto a Playa Macao para sentir la arena y el mar.</li>
+                            <li><strong class="font-semibold">Dom 12, Noche:</strong> Cena en un "comedor" local para probar el verdadero sazón dominicano y las primeras cervezas Presidentes.</li>
                             <li><strong class="font-semibold">Lun 13, Todo el día:</strong> ¡Día de la gran aventura! Aquí es donde elegimos nuestro destino en la sección de abajo.</li>
                         </ul>
                     </div>
@@ -89,7 +108,7 @@
                         <ul class="space-y-3 list-disc list-inside text-sm sm:text-base">
                             <li><strong class="font-semibold">Mañana:</strong> Desayuno local y última vuelta por la zona. Check-out del alojamiento temporal.</li>
                             <li><strong class="font-semibold">Mediodía:</strong> Uber hacia el Hotel Riu Republica. Distancia aprox: 20-30 min.</li>
-                            <li><strong class="font-semibold">Tarde/Noche:</strong> Check-in, pulsera y que comience oficialmente la vida del todo incluido. Primera cena y fiesta en el resort.</li>
+                            <li><strong class="font-semibold">Tarde/Noche:</strong> Check-in, pulsera y que comience oficialmente la vida del todo incluido. Primera cena y asalto a la barra libre.</li>
                         </ul>
                     </div>
                 </div>
@@ -105,13 +124,13 @@
                     </div>
                     <div class="p-4 sm:p-6 flex-grow">
                         <h3 class="font-bold text-xl text-emerald-700">Miércoles 15 a Viernes 17 de Octubre</h3>
-                        <p class="text-sm text-gray-500 mb-4">Misión principal: disfrutar al máximo el Riu.</p>
+                        <p class="text-sm text-gray-500 mb-4">Misión principal: Exterminar el menú de cócteles 🍹💥.</p>
                         <ul class="space-y-3 list-disc list-inside text-sm sm:text-base">
                             <li><strong class="font-semibold">Objetivos Diarios:</strong> Dominar el buffet, probar todos los cócteles, participar en las actividades de la piscina, playa, y deportes acuáticos.</li>
-                            <li><strong class="font-semibold">Miércoles:</strong> 🕺 Riu Pool Party - ¡Temática White Party por la tarde!</li>
-                            <li><strong class="font-semibold">Jueves:</strong> Día de relax o de participar en los torneos deportivos del hotel.</li>
-                            <li><strong class="font-semibold">Viernes:</strong> 🎧 Riu Pool Party - ¡Temática Neon Party por la tarde/noche!</li>
-                            <li><strong class="font-semibold">Noches:</strong> Explorar los restaurantes temáticos, disfrutar de los shows y las fiestas del hotel.</li>
+                            <li><strong class="font-semibold">Miércoles:</strong> 🕺 Riu Pool Party - ¡Temática White Party! Guerra de espuma y beats hasta el atardecer.</li>
+                            <li><strong class="font-semibold">Jueves:</strong> Día de "relax" (recuperación) o torneos deportivos para los valientes.</li>
+                            <li><strong class="font-semibold">Viernes:</strong> 🎧 Riu Pool Party - ¡Temática Neon Party! La última gran fiesta en la piscina.</li>
+                            <li><strong class="font-semibold">Noches:</strong> Explorar los restaurantes temáticos, disfrutar de los shows y las fiestas del hotel hasta que el cuerpo aguante.</li>
                         </ul>
                     </div>
                 </div>
@@ -140,7 +159,7 @@
         </section>
 
         <!-- INTERACTIVE ADVENTURE CHOICE -->
-        <section id="aventura" class="mb-12">
+        <section id="aventura" class="mb-12 fade-in-up">
             <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-2">La Zona de Decisión: Aventura del Lunes 13</h2>
             <p class="text-center text-gray-600 mb-8">Elijan una actividad. La opción que escojamos afectará el presupuesto total.</p>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
@@ -209,7 +228,7 @@
                 <div id="optionE" class="card-option bg-white rounded-xl shadow-lg border-4 border-transparent p-4 sm:p-6 text-center flex flex-col sm:col-span-2 lg:col-span-1">
                     <h3 class="text-xl sm:text-2xl font-bold text-purple-600">OPCIÓN E: FIESTA SHOW</h3>
                     <p class="font-semibold text-base sm:text-lg mb-4">Noche en Coco Bongo</p>
-                    <img src="https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" onerror="this.onerror=null;this.src='https://placehold.co/600x400/9B59B6/FFFFFF?text=Coco+Bongo';" alt="Imagen de Coco Bongo" class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <img src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" onerror="this.onerror=null;this.src='https://placehold.co/600x400/9B59B6/FFFFFF?text=Coco+Bongo';" alt="Imagen de Coco Bongo" class="rounded-lg mb-4 w-full h-48 object-cover">
                      <div class="text-gray-600 mb-4 flex-grow text-left text-xs sm:text-sm space-y-1">
                         <p><strong>Día:</strong> Relax en el alojamiento o playa cercana.</p>
                         <p><strong>09:30 PM:</strong> Traslado hacia Coco Bongo.</p>
@@ -224,7 +243,7 @@
         </section>
 
         <!-- BUDGET SECTION -->
-        <section id="presupuesto" class="bg-gray-800 text-white rounded-xl shadow-2xl p-4 sm:p-6 md:p-8">
+        <section id="presupuesto" class="bg-gray-800 text-white rounded-xl shadow-2xl p-4 sm:p-6 md:p-8 fade-in-up">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">Presupuesto Detallado</h2>
             <div class="max-w-4xl mx-auto">
                 <div class="bg-gray-700 rounded-lg p-4 mb-6">
@@ -292,7 +311,7 @@
     </main>
 
     <footer class="text-center py-8 px-4">
-        <p class="font-bold text-gray-700">A disfrutar del viaje.</p>
+        <p class="font-bold text-gray-700">Lo que pasa en Punta Cana... se queda en Instagram. ¡A disfrutar!</p>
         <p class="text-sm text-gray-500">Punta Cana 2025</p>
     </footer>
 
@@ -415,6 +434,19 @@
                     ui.comparisonToggle.classList.add('bg-cyan-600', 'hover:bg-cyan-700');
                 }
                 calculateTotal();
+            });
+
+            // Intersection Observer for animations
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.fade-in-up').forEach(el => {
+                observer.observe(el);
             });
 
             // Initial Page Load
