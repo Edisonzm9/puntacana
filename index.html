@@ -30,11 +30,16 @@
             box-shadow: 0 0 0 4px #10B981, 0 10px 15px -3px rgb(0 0 0 / 0.1);
             border-color: #10B981;
         }
-        .comparison-button {
+        .comparison-button, .map-button {
             transition: background-color 0.3s ease, transform 0.2s ease;
         }
-        .comparison-button:hover {
+        .comparison-button:hover, .map-button:hover {
             transform: scale(1.05);
+        }
+        .map-button.active {
+            background-color: #10B981;
+            color: white;
+            font-weight: bold;
         }
         @keyframes fadeInUp {
             from {
@@ -154,6 +159,24 @@
                             <li><strong class="font-semibold">06:50 PM:</strong> Vuelo DM6704 de regreso a Quito. ¡Misión cumplida!</li>
                         </ul>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAP SECTION -->
+        <section id="mapa" class="mb-12 fade-in-up">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">Mapa de Operaciones Interactivo</h2>
+            <div class="bg-white p-4 rounded-xl shadow-lg">
+                <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden mb-4">
+                     <iframe id="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3786.89133454483!2d-68.4899556856171!3d18.7759169872457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c28650382f0d5f7%3A0x65b336743849963!2sHotel%20Riu%20Republica!5e0!3m2!1ses!2ses" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div id="map-buttons" class="flex flex-wrap gap-2 justify-center">
+                    <button class="map-button active bg-gray-200 text-gray-800 font-semibold py-2 px-4 rounded-lg text-sm" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3786.89133454483!2d-68.4899556856171!3d18.7759169872457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c28650382f0d5f7%3A0x65b336743849963!2sHotel%20Riu%20Republica!5e0!3m2!1ses!2ses">📍 Hotel Riu</button>
+                    <button class="map-button bg-gray-200 text-gray-800 font-semibold py-2 px-4 rounded-lg text-sm" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3789.26127401128!2d-68.3655886856189!3d18.56743498730628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c28358045a2786d%3A0x10c333e134b5682a!2sAeropuerto%20Internacional%20de%20Punta%20Cana!5e0!3m2!1ses!2ses">✈️ Aeropuerto</button>
+                    <button class="map-button bg-gray-200 text-gray-800 font-semibold py-2 px-4 rounded-lg text-sm" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3790.007572886369!2d-68.3863768856194!3d18.5265499873256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2838b000000001%3A0x97339893e14a1698!2sScape%20Park!5e0!3m2!1ses!2ses">🏞️ Scape Park</button>
+                    <button class="map-button bg-gray-200 text-gray-800 font-semibold py-2 px-4 rounded-lg text-sm" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15141.03714655554!2d-68.56369166569824!3d18.801534900000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c28665555555555%3A0x19b85c5a7350f5d5!2sPlaya%20Macao!5e0!3m2!1ses!2ses">🏖️ Playa Macao</button>
+                    <button class="map-button bg-gray-200 text-gray-800 font-semibold py-2 px-4 rounded-lg text-sm" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3787.874102714243!2d-68.413788785618!3d18.68164998727025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c28646666666667%3A0x436963536e29855!2sCoco%20Bongo%20Punta%20Cana!5e0!3m2!1ses!2ses">🕺 Coco Bongo</button>
+                    <button class="map-button bg-gray-200 text-gray-800 font-semibold py-2 px-4 rounded-lg text-sm" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15194.52988365287!2d-68.85202026570434!3d18.3744949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf546666666667%3A0xc3b8c5ac8f82f25!2sBayah%C3%ADbe!5e0!3m2!1ses!2ses">⛵ Salida a Saona</button>
                 </div>
             </div>
         </section>
@@ -349,6 +372,8 @@
                 localMiscContainer: document.getElementById('local-misc-container'),
                 extrasSubtotalContainer: document.getElementById('extras-subtotal-container'),
                 adventureCostContainer: document.getElementById('adventure-cost-container'),
+                mapIframe: document.getElementById('map-iframe'),
+                mapButtons: document.querySelectorAll('.map-button'),
                 options: ['A', 'B', 'C', 'D', 'E'].map(opt => document.getElementById(`option${opt}`))
             };
 
@@ -434,6 +459,18 @@
                     ui.comparisonToggle.classList.add('bg-cyan-600', 'hover:bg-cyan-700');
                 }
                 calculateTotal();
+            });
+            
+            // Map button functionality
+            ui.mapButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const newSrc = button.dataset.src;
+                    ui.mapIframe.src = newSrc;
+                    
+                    // Update active state for buttons
+                    ui.mapButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                });
             });
 
             // Intersection Observer for animations
